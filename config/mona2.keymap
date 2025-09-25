@@ -93,10 +93,10 @@
 
         symbol {
             bindings = <
-&kp LS(EQUAL)  &kp LS(DQT)  &kp LS(SQT)   &kp LS(GRAVE)  &kp LS(PLUS)                                &kp LS(DLLR)  &kp Y          &kp LS(PRCNT)  &kp LS(AMPS)  &kp SEMICOLON
-&kp LS(LPAR)   &kp LBKT     &kp LS(LBRC)  &kp LS(LT)     &kp MINUS                     &kp BSLH      &trans        &kp AT         &kp LS(POUND)  &kp F1        &kp COLON
-&kp LS(RPAR)   &kp RBKT     &kp LS(RBRC)  &kp LS(GT)     &kp FSLH      &kp LS(STAR)    &kp LS(PIPE)  &kp LS(EXCL)  &kp LS(QMARK)  &kp LS(TILDE)  &kp TILDE     &kp UNDERSCORE
-&trans         &trans       &trans        &trans         &trans        &trans          &trans        &trans                                                    &trans
+&kp LS(EQUAL)  &kp LS(DQT)  &kp LS(SQT)   &kp LS(GRAVE)  &kp LS(PLUS)                          &kp LS(DLLR)  &kp LA(Y)      &kp PIPE       &kp BACKSLASH  &kp SEMICOLON
+&kp LS(LPAR)   &kp LBKT     &kp LS(LBRC)  &kp LS(LT)     &kp MINUS                     &trans  &kp PERCENT   &kp AT         &kp POUND      &kp AMPERSAND  &kp COLON
+&kp LS(RPAR)   &kp RBKT     &kp LS(RBRC)  &kp LS(GT)     &kp FSLH      &kp LS(STAR)    &trans  &kp LS(EXCL)  &kp LS(QMARK)  &kp LS(TILDE)  &kp TILDE      &kp UNDERSCORE
+&trans         &trans       &trans        &trans         &trans        &trans          &trans  &trans                                                     &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -169,12 +169,12 @@
         compatible = "zmk,conditional-layers";
 
         shortcut_with_mouse {
-            if-layers = <5>;
+            if-layers = <5 6>;
             then-layer = <6>;
         };
 
         number_with_symbols {
-            if-layers = <2>;
+            if-layers = <2 1>;
             then-layer = <1>;
         };
     };
