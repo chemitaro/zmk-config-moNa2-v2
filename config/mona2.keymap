@@ -85,7 +85,18 @@
 &kp Q             &kp W           &kp E              &kp R     &kp T                                              &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A             &kp S           &kp D              &kp F     &kp G                            &kp F13           &kp H        &kp J  &kp K      &lt 6 L  &kp BACKSPACE
 &kp Z             &kp X           &kp C              &kp V     &kp B        &lt 4 ESCAPE        &kp F15           &kp N        &kp M  &kp COMMA  &kp DOT  &kp MINUS
-&mt LEFT_ALT TAB  &kp LEFT_SHIFT  &ht_rclk_mo 5 MB2  &mkp MB1  &lt 1 SPACE  &lt 2 LANGUAGE_2    &lt 7 LANGUAGE_1  &lt 3 ENTER                             &kp F5
+&mt LEFT_ALT TAB  &kp LEFT_SHIFT  &ht_rclk_mo 5 MB2  &mkp MB1  &lt 2 SPACE  &lt 1 LANGUAGE_2    &lt 7 LANGUAGE_1  &lt 3 ENTER                             &kp F5
+            >;
+
+            sensor-bindings = <&scroll_up_down>;
+        };
+
+        symbol {
+            bindings = <
+&kp LS(EQUAL)  &kp LS(DQT)  &kp LS(SQT)   &kp LS(GRAVE)  &kp LS(PLUS)                                &kp LS(DLLR)  &kp Y          &kp LS(PRCNT)  &kp LS(AMPS)  &kp SEMICOLON
+&kp LS(LPAR)   &kp LBKT     &kp LS(LBRC)  &kp LS(LT)     &kp MINUS                     &kp BSLH      &trans        &kp AT         &kp LS(POUND)  &kp F1        &kp COLON
+&kp LS(RPAR)   &kp RBKT     &kp LS(RBRC)  &kp LS(GT)     &kp FSLH      &kp LS(STAR)    &kp LS(PIPE)  &kp LS(EXCL)  &kp LS(QMARK)  &kp LS(TILDE)  &kp TILDE     &kp UNDERSCORE
+&trans         &trans       &trans        &trans         &trans        &trans          &trans        &trans                                                    &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -93,24 +104,13 @@
 
         number {
             bindings = <
-&kp EQUAL        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                           &trans  &trans  &trans  &trans  &trans
-&kp DOT          &kt KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS                  &trans  &trans  &trans  &trans  &trans  &trans
-&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ASTERISK  &kp SLASH    &trans  &trans  &trans  &trans  &trans  &trans
-&trans           &trans           &trans           &trans           &trans        &trans       &trans  &trans                          &trans
+&trans           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans                    &trans  &trans  &trans  &trans  &trans
+&kp DOT          &kt KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans           &trans           &trans           &trans           &trans  &trans    &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&scroll_right_left>;
-        };
-
-        symbol {
-            bindings = <
-&kp EXCLAMATION  &kp AT_SIGN  &kp POUND          &kp DOLLAR  &kp PERCENT                      &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp MINUS  &kp UNDERSCORE
-&kp GRAVE        &kp TILDE    &kp DOUBLE_QUOTES  &kp SQT     &trans                  &trans   &mkp MB3   &mkp MB1       &mkp MB2      &kp EQUAL  &kp PLUS
-&kp F1           &kp F2       &kp F3             &kp F4      &kp F5       &kp F11    &kp F12  &kp F6     &kp F7         &kp F8        &kp F9     &kp F10
-&trans           &trans       &trans             &trans      &trans       &trans     &trans   &trans                                             &trans
-            >;
-
-            sensor-bindings = <&scroll_up_down>;
         };
 
         cursor {
@@ -157,10 +157,10 @@
 
         mission_control {
             bindings = <
-&kp LC(N1)  &kp LC(N2)  &kp LC(N3)  &kp LC(N4)  &kp LC(N5)                    &trans  &trans        &kp LC(UP)    &trans         &trans
-&kp LC(N6)  &kp LC(N7)  &kp LC(N8)  &kp LC(N9)  &kp LC(N0)            &trans  &trans  &kp LC(LEFT)  &kt LC(DOWN)  &kp LC(RIGHT)  &trans
-&trans      &trans      &trans      &trans      &trans      &trans    &trans  &trans  &trans        &kp F11       &trans         &trans
-&trans      &trans      &trans      &trans      &trans      &trans    &trans  &trans                                             &trans
+&kp LC(N1)  &kp LC(N2)  &kp LC(N3)  &kp LC(N4)  &kp LC(N5)                  &none  &none         &kp LC(UP)    &none          &none
+&kp LC(N6)  &kp LC(N7)  &kp LC(N8)  &kp LC(N9)  &kp LC(N0)           &none  &none  &kp LC(LEFT)  &kt LC(DOWN)  &kp LC(RIGHT)  &none
+&none       &none       &none       &none       &none       &none    &none  &none  &none         &kp F11       &none          &none
+&none       &none       &none       &none       &none       &none    &none  &none                                             &none
             >;
         };
     };
@@ -171,6 +171,11 @@
         shortcut_with_mouse {
             if-layers = <5>;
             then-layer = <6>;
+        };
+
+        number_with_symbols {
+            if-layers = <2>;
+            then-layer = <1>;
         };
     };
 };
