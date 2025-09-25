@@ -140,7 +140,7 @@
 &trans       &trans     &kp LG(LS(N3))  &kp LG(LS(N4))  &trans                           &trans         &trans  &trans  &trans  &trans
 &kp LG(A)    &kp LG(S)  &trans          &kp LG(F)       &trans                   &trans  &trans         &trans  &trans  &trans  &trans
 &kp LG(Z)    &kp LG(X)  &kp LG(C)       &kp LG(V)       &kp LG(B)      &trans    &trans  &trans         &trans  &trans  &trans  &trans
-&kp LG(TAB)  &trans     &trans          &trans          &kp LG(SPACE)  &trans    &trans  &kp LG(ENTER)                          &trans
+&kp LG(TAB)  &trans     &trans          &mkp MB3        &kp LG(SPACE)  &trans    &trans  &kp LG(ENTER)                          &trans
             >;
 
             sensor-bindings = <&scroll_right_left>;
