@@ -28,11 +28,19 @@
         mouse_btn3 {
             bindings = <&mkp MB3>;
             key-positions = <17 18>;
+            layers = <5>;
         };
 
         mouse_btn3_2 {
             bindings = <&mkp MB3>;
             key-positions = <35 36>;
+            layers = <0>;
+        };
+
+        connect_mode {
+            bindings = <&mo 8>;
+            key-positions = <33 34>;
+            layers = <0>;
         };
     };
 
@@ -115,7 +123,7 @@
             bindings = <
 &kp Q                 &kp W           &kp E                 &kp R     &kp T                                                          &kp Y        &kp U    &kp I      &kp O    &kp P
 &kp A                 &kp S           &kp D                 &kp F     &kp G                                        &kp F5            &kp H        &kp J    &kp K      &lt 5 L  &lt 5 COLON
-&lt 8 Z               &kp X           &kp C                 &kp V     &kp B                 &mt LEFT_ALT ESCAPE    &kp BACKSPACE     &kp N        &lt 3 M  &kp COMMA  &kp DOT  &kp MINUS
+&kp Z                 &kp X           &kp C                 &kp V     &kp B                 &mt LEFT_ALT ESCAPE    &kp BACKSPACE     &kp N        &lt 3 M  &kp COMMA  &kp DOT  &kp MINUS
 &mt LEFT_CONTROL TAB  &kp LEFT_SHIFT  &shortcut_with_mouse  &mkp MB1  &number_with_symbols  &lt 1 LANGUAGE_2       &lt 7 LANGUAGE_1  &lt 6 ENTER                               &lt 1 SLASH
             >;
 
