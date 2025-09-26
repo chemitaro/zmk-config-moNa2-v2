@@ -29,6 +29,11 @@
             bindings = <&mkp MB3>;
             key-positions = <17 18>;
         };
+
+        mouse_btn3_2 {
+            bindings = <&mkp MB3>;
+            key-positions = <35 36>;
+        };
     };
 
     macros {
@@ -161,10 +166,10 @@
 
         cursor {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &kp HOME  &trans          &kp UP_ARROW    &trans           &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &kp END   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans          &trans          &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                                     &trans
+&trans  &trans  &trans  &trans  &trans                    &kp LG(UP)    &trans          &kp UP_ARROW    &trans           &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &kp LG(DOWN)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans          &trans          &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                                         &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
