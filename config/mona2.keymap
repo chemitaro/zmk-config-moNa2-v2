@@ -113,10 +113,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W           &kp E                 &kp R     &kp T                                                          &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S           &kp D                 &kp F     &kp G                                        &kp F5            &kp H        &kp J  &kp K      &lt 4 L  &lt 4 COLON
-&lt 7 Z           &kp X           &kp C                 &kp V     &kp B                 &mt LEFT_ALT ESCAPE    &kp BACKSPACE     &kp N        &kp M  &kp COMMA  &kp DOT  &kp MINUS
-&mt LEFT_ALT TAB  &kp LEFT_SHIFT  &shortcut_with_mouse  &mkp MB1  &number_with_symbols  &lt 1 LANGUAGE_2       &lt 7 LANGUAGE_1  &lt 6 ENTER                             &lt 1 SLASH
+&kp Q                 &kp W           &kp E                 &kp R     &kp T                                                          &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A                 &kp S           &kp D                 &kp F     &kp G                                        &kp F5            &kp H        &kp J  &kp K      &lt 4 L  &lt 4 COLON
+&lt 7 Z               &kp X           &kp C                 &kp V     &kp B                 &mt LEFT_ALT ESCAPE    &kp BACKSPACE     &kp N        &kp M  &kp COMMA  &kp DOT  &kp MINUS
+&mt LEFT_CONTROL TAB  &kp LEFT_SHIFT  &shortcut_with_mouse  &mkp MB1  &number_with_symbols  &lt 1 LANGUAGE_2       &lt 7 LANGUAGE_1  &lt 6 ENTER                             &lt 1 SLASH
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -124,10 +124,10 @@
 
         symbol {
             bindings = <
-&kp LS(EQUAL)  &kp LS(DQT)  &kp LS(SQT)   &kp LS(GRAVE)  &kp LS(PLUS)                          &kp LS(DLLR)  &kp LA(Y)      &kp PIPE       &kp BACKSLASH  &kp SEMICOLON
-&kp LS(LPAR)   &kp LBKT     &kp LS(LBRC)  &kp LS(LT)     &kp MINUS                     &trans  &kp PERCENT   &kp AT         &kp POUND      &kp AMPERSAND  &kp COLON
-&kp LS(RPAR)   &kp RBKT     &kp LS(RBRC)  &kp LS(GT)     &kp FSLH      &kp LS(STAR)    &trans  &kp LS(EXCL)  &kp LS(QMARK)  &kp LS(TILDE)  &kp TILDE      &kp UNDERSCORE
-&trans         &trans       &trans        &trans         &trans        &trans          &trans  &trans                                                     &trans
+&kp EQUAL             &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp GRAVE         &kp PLUS                        &kp DOLLAR       &kp LA(Y)     &kp PIPE   &kp BACKSLASH  &kp SEMICOLON
+&kp LEFT_PARENTHESIS  &kp LBKT           &kp LEFT_BRACE    &kp LESS_THAN     &kp MINUS               &trans  &kp PERCENT      &kp AT        &kp POUND  &kp AMPERSAND  &kp COLON
+&kp RPAR              &kp RBKT           &kp RIGHT_BRACE   &kp GREATER_THAN  &kp FSLH   &kp ASTRK    &trans  &kp EXCLAMATION  &kp QUESTION  &kp CARET  &kp TILDE      &kp UNDERSCORE
+&trans                &trans             &trans            &trans            &trans     &trans       &trans  &trans                                                   &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
