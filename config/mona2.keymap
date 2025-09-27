@@ -82,6 +82,22 @@
 
             label = "SHORTCUT_WITH_MOUSE";
         };
+
+        lang_1_or_mission_control: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&lt 7 LANGUAGE_1>,
+                <&macro_tap>,
+                <&kp LC(UP)>,
+                <&macro_release>,
+                <&lt 7 LANGUAGE_1>,
+                <&macro_tap>,
+                <&kp LC(UP)>;
+
+            label = "NEW_MACRO";
+        };
     };
 
     behaviors {
@@ -126,10 +142,10 @@
 
         default_layer {
             bindings = <
-&kp Q                 &kp W           &kp E                 &kp R     &kp T                                                       &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A                 &kp S           &kp D                 &kp F     &kp G                                     &kp F5            &kp H        &kp J  &kp K      &lt 5 L  &lt 5 COLON
-&kp Z                 &kp X           &kp C                 &kp V     &kp B                 &mt LEFT_ALT TAB    &kp BACKSPACE     &kp N        &kp M  &kp COMMA  &kp DOT  &kp MINUS
-&mt LEFT_CONTROL ESC  &kp LEFT_SHIFT  &shortcut_with_mouse  &mkp MB1  &number_with_symbols  &lt 1 LANGUAGE_2    &lt 7 LANGUAGE_1  &lt 6 ENTER                             &lt 1 SLASH
+&kp Q                 &kp W           &kp E                 &kp R     &kp T                                                                        &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A                 &kp S           &kp D                 &kp F     &kp G                                            &kp F5                      &kp H        &kp J  &kp K      &lt 5 L  &lt 5 COLON
+&kp Z                 &kp X           &kp C                 &kp V     &kp B                 &mt LEFT_ALT LANGUAGE_2    &lang_1_or_mission_control  &kp N        &kp M  &kp COMMA  &kp DOT  &kp MINUS
+&mt LEFT_CONTROL ESC  &kp LEFT_SHIFT  &shortcut_with_mouse  &mkp MB1  &number_with_symbols  &lt 1 TAB                  &kp BACKSPACE               &lt 6 ENTER                             &lt 1 SLASH
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -201,13 +217,13 @@
 
         mission_control {
             bindings = <
-&kp LC(N1)  &kp LC(N2)  &kp LC(N3)  &kp LC(N4)  &kp LC(N5)                  &none  &none         &kp LC(UP)    &none          &none
-&kp LC(N6)  &kp LC(N7)  &kp LC(N8)  &kp LC(N9)  &kp LC(N0)           &none  &none  &kp LC(LEFT)  &kt LC(DOWN)  &kp LC(RIGHT)  &none
-&none       &none       &none       &none       &none       &none    &none  &none  &none         &kp F11       &none          &none
-&none       &none       &none       &none       &none       &none    &none  &none                                             &none
+&kp LC(N1)  &kp LC(N2)  &kp LC(N3)  &kp LC(N4)  &kp LC(N5)                  &none  &none         &none  &none          &none
+&kp LC(N6)  &kp LC(N7)  &kp LC(N8)  &kp LC(N9)  &kp LC(N0)           &none  &none  &kp LC(LEFT)  &none  &kp LC(RIGHT)  &none
+&none       &none       &none       &none       &none       &none    &none  &none  &none         &none  &none          &none
+&none       &none       &none       &none       &none       &none    &none  &none                                      &none
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(RIGHT) LC(LEFT)>;
+            sensor-bindings = <&inc_dec_kp LC(LEFT) LC(RIGHT)>;
         };
 
         connect {
