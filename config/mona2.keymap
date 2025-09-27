@@ -83,18 +83,15 @@
             label = "SHORTCUT_WITH_MOUSE";
         };
 
-        lang_1_or_mission_control: new_macro {
+        mission_control: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&lt 7 LANGUAGE_1>,
-                <&macro_tap>,
-                <&kp LC(UP)>,
+                <&mo 7 &kp LC(UP)>,
+                <&macro_pause_for_release>,
                 <&macro_release>,
-                <&lt 7 LANGUAGE_1>,
-                <&macro_tap>,
-                <&kp LC(UP)>;
+                <&kp LC(UP) &mo 7>;
 
             label = "NEW_MACRO";
         };
@@ -135,6 +132,16 @@
             tapping-term-ms = <170>;
             flavor = "tap-preferred";
         };
+
+        ht_mc_or_lang1: ht_mc_or_lang1 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_MC_OR_LANG1";
+            #binding-cells = <2>;
+            bindings = <&mission_control>, <&kp>;
+
+            tapping-term-ms = <170>;
+            flavor = "balanced";
+        };
     };
 
     keymap {
@@ -142,10 +149,10 @@
 
         default_layer {
             bindings = <
-&kp Q                 &kp W           &kp E                 &kp R     &kp T                                                                        &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A                 &kp S           &kp D                 &kp F     &kp G                                            &kp F5                      &kp H        &kp J  &kp K      &lt 5 L  &lt 5 COLON
-&kp Z                 &kp X           &kp C                 &kp V     &kp B                 &mt LEFT_ALT LANGUAGE_2    &lang_1_or_mission_control  &kp N        &kp M  &kp COMMA  &kp DOT  &kp MINUS
-&mt LEFT_CONTROL ESC  &kp LEFT_SHIFT  &shortcut_with_mouse  &mkp MB1  &number_with_symbols  &lt 1 TAB                  &kp BACKSPACE               &lt 6 ENTER                             &lt 1 SLASH
+&kp Q                 &kp W           &kp E                 &kp R     &kp T                                                                          &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A                 &kp S           &kp D                 &kp F     &kp G                                            &kp F5                        &kp H        &kp J  &kp K      &lt 5 L  &lt 5 COLON
+&kp Z                 &kp X           &kp C                 &kp V     &kp B                 &mt LEFT_ALT LANGUAGE_2    &ht_mc_or_lang1 0 LANGUAGE_1  &kp N        &kp M  &kp COMMA  &kp DOT  &kp MINUS
+&mt LEFT_CONTROL ESC  &kp LEFT_SHIFT  &shortcut_with_mouse  &mkp MB1  &number_with_symbols  &lt 1 TAB                  &kp BACKSPACE                 &lt 6 ENTER                             &lt 1 SLASH
             >;
 
             sensor-bindings = <&scroll_up_down>;
