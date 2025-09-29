@@ -199,10 +199,10 @@
 
         symbol {
             bindings = <
-&kp EQUAL         &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE   &kp GRAVE              &kp PLUS                        &kp EXCLAMATION  &kp CARET      &kp TILDE   &kp PIPE       &kp BACKSLASH
-&kp LESS_THAN     &kp LEFT_BRACE     &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp MINUS               &trans  &kp POUND        &kp AT         &kp COLON   &kp SEMICOLON  &kp UNDERSCORE
-&kp GREATER_THAN  &kp RIGHT_BRACE    &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp FSLH   &kp ASTRK    &trans  &kp PERCENT      &kp AMPERSAND  &kp DOLLAR  &kp LA(Y)      &kp QUESTION
-&trans            &trans             &trans             &trans                 &trans     &trans       &trans  &trans                                                     &trans
+&kp EQUAL         &kp GRAVE        &kp SINGLE_QUOTE   &kp DOUBLE_QUOTES      &kp PLUS                        &kp EXCLAMATION  &kp CARET      &kp TILDE   &kp PIPE       &kp BACKSLASH
+&kp LESS_THAN     &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp MINUS               &trans  &kp POUND        &kp AT         &kp COLON   &kp SEMICOLON  &kp UNDERSCORE
+&kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp FSLH   &kp ASTRK    &trans  &kp PERCENT      &kp AMPERSAND  &kp DOLLAR  &kp LA(Y)      &kp QUESTION
+&trans            &trans           &trans             &trans                 &trans     &trans       &trans  &trans                                                     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
