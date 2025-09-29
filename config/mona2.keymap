@@ -50,8 +50,7 @@
 
         zoom_std {
             bindings = <&kp LG(NUMBER_0)>;
-            key-positions = <4 14>;
-            layers = <4>;
+            key-positions = <4 14 35>;
         };
     };
 
@@ -199,10 +198,10 @@
 
         symbol {
             bindings = <
-&kp EQUAL         &kp GRAVE        &kp SINGLE_QUOTE   &kp DOUBLE_QUOTES      &kp PLUS                        &kp EXCLAMATION  &kp CARET      &kp TILDE   &kp PIPE       &kp BACKSLASH
-&kp LESS_THAN     &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp MINUS               &trans  &kp POUND        &kp AT         &kp COLON   &kp SEMICOLON  &kp UNDERSCORE
-&kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp FSLH   &kp ASTRK    &trans  &kp PERCENT      &kp AMPERSAND  &kp DOLLAR  &kp LA(Y)      &kp QUESTION
-&trans            &trans           &trans             &trans                 &trans     &trans       &trans  &trans                                                     &trans
+&kp GRAVE        &kp SINGLE_QUOTE   &kp DOUBLE_QUOTES      &kp ASTERISK  &kp PLUS                         &kp EXCLAMATION  &kp CARET      &kp TILDE      &kp PIPE          &kp BACKSLASH
+&kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp SLASH     &kp MINUS                &trans  &kp POUND        &kp AT         &kp COLON      &kp SEMICOLON     &kp UNDERSCORE
+&kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp EQUAL     &kp DOLLAR  &kp LA(Y)    &trans  &kp PERCENT      &kp AMPERSAND  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION
+&trans           &trans             &trans                 &trans        &trans      &trans       &trans  &trans                                                           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
@@ -210,10 +209,10 @@
 
         number {
             bindings = <
-&trans           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans                    &trans  &trans  &trans  &trans  &trans
-&kp KP_DOT       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans           &trans           &trans           &trans           &trans  &trans    &trans  &trans                          &trans
+&kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp KP_NUMBER_0  &kp KP_NUMBER_0  &kp KP_DOT       &trans  &trans  &trans    &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
