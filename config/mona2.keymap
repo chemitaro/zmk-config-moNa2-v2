@@ -166,7 +166,7 @@
 &trans                &trans             &trans            &trans            &trans     &trans       &trans  &trans                                                     &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
         };
 
         number {
@@ -177,7 +177,7 @@
 &trans           &trans           &trans           &trans           &trans  &trans    &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&scroll_right_left>;
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
         };
 
         scroll_with_ball {
@@ -187,6 +187,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
         shortcut {
