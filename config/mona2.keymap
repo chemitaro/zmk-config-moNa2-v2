@@ -47,6 +47,12 @@
             bindings = <&mo 3>;
             key-positions = <29 30>;
         };
+
+        zoom_std {
+            bindings = <&kp LG(NUMBER_0)>;
+            key-positions = <4 14>;
+            layers = <4>;
+        };
     };
 
     macros {
