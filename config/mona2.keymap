@@ -95,6 +95,19 @@
 
             label = "NEW_MACRO";
         };
+
+        mbt1_command: mbt1_command {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_COMMAND &mkp MB1>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mkp MB1 &kp LEFT_COMMAND>;
+
+            label = "MBT1_COMMAND";
+        };
     };
 
     behaviors {
@@ -188,7 +201,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp LG(PLUS) LG(MINUS)>;
         };
 
         shortcut {
@@ -196,7 +209,7 @@
 &none      &none      &kp LG(LS(N3))  &kp LG(LS(N4))  &none                                &none          &none  &none  &none  &none
 &kp LG(A)  &kp LG(S)  &none           &kp LG(F)       &none                         &none  &none          &none  &none  &none  &none
 &kp LG(Z)  &kp LG(X)  &kp LG(C)       &kp LG(V)       &kp LG(B)      &kp LG(TAB)    &none  &none          &none  &none  &none  &none
-&none      &none      &none           &mkp MB3        &kp LG(SPACE)  &none          &none  &kp LG(ENTER)                       &none
+&none      &none      &none           &mbt1_command   &kp LG(SPACE)  &none          &none  &kp LG(ENTER)                       &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -204,10 +217,10 @@
 
         mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                              &trans
+&trans  &trans     &trans     &trans     &trans                    &trans  &trans    &trans    &trans  &trans
+&trans  &trans     &trans     &trans     &trans            &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
+&trans  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans  &trans    &trans  &trans  &trans    &trans    &trans  &trans
+&trans  &trans     &trans     &trans     &trans  &trans    &trans  &trans                              &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
