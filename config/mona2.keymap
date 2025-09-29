@@ -50,7 +50,7 @@
 
         zoom_std {
             bindings = <&kp LG(NUMBER_0)>;
-            key-positions = <4 14 35>;
+            key-positions = <4 14>;
             layers = <4>;
         };
     };
