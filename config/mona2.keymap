@@ -39,7 +39,7 @@
 
         connect_mode {
             bindings = <&mo 8>;
-            key-positions = <33 34>;
+            key-positions = <15 27>;
             layers = <0>;
         };
 
