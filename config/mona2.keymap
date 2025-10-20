@@ -14,11 +14,13 @@
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
+    tapping-term-ms = <170>;
 };
 
 &lt {
     quick-tap-ms = <300>;
     flavor = "balanced";
+    tapping-term-ms = <170>;
 };
 
 / {
@@ -206,7 +208,7 @@
         default_layer {
             bindings = <
 &kp Q                 &kp W           &kp E                      &kp R     &kp T                                                                     &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A                 &kp S           &kp D                      &kp F     &kp G                                            &kp GLOBE                &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&kp A                 &kp S           &kp D                      &kp F     &kp G                                            &mt GLOBE LC(LG(V))      &kp H        &kp J  &kp K      &kp L    &kp MINUS
 &kp Z                 &kp X           &kp C                      &kp V     &kp B        &ht_mission_control 0 LANGUAGE_2    &mt LEFT_ALT LANGUAGE_1  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &mt LEFT_CONTROL ESC  &kp LEFT_SHIFT  &mkp_shortcut_mouse 0 MB2  &mkp MB1  &lt 1 SPACE  &kp_num_sym 0 TAB                   &kp BACKSPACE            &lt 6 ENTER                             &kp_sym_scroll 0 COLON
             >;
