@@ -40,7 +40,7 @@
         };
 
         connect_mode {
-            bindings = <&mo 8>;
+            bindings = <&mo 7>;
             key-positions = <15 27>;
             layers = <0>;
         };
@@ -183,10 +183,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W      &kp E          &kp R     &kp T                                               &kp Y                      &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S      &kp D          &kp F     &kp G                             &mt GLOBE LC(UP)  &kp H                      &kp J  &kp K      &kp L    &kp MINUS
-&kp Z             &kp X      &kp C          &kp V     &kp B        &kp LANGUAGE_2       &kp LANGUAGE_1    &kp N                      &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&mt LEFT_ALT ESC  &kp LCTRL  &mo_mkp 4 MB2  &mkp MB1  &lt 1 SPACE  &kp_num_sym 0 TAB    &kp BACKSPACE     &kp_cursor_scroll 0 ENTER                             &lt 5 COLON
+&kp Q             &kp W      &kp E          &kp R     &kp T                                                       &kp Y                      &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S      &kp D          &kp F     &kp G                                     &mt GLOBE LC(UP)  &kp H                      &kp J  &kp K      &kp L    &kp MINUS
+&kp Z             &kp X      &kp C          &kp V     &kp B        &mt LEFT_SHIFT LANGUAGE_2    &lt 1 LANGUAGE_1  &kp N                      &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&mt LEFT_ALT ESC  &kp LCTRL  &mo_mkp 4 MB2  &mkp MB1  &lt 1 SPACE  &kp_num_sym 0 TAB            &kp BACKSPACE     &kp_cursor_scroll 0 ENTER                             &lt 5 COLON
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -238,10 +238,10 @@
 
         mouse {
             bindings = <
-&trans  &trans     &trans            &trans     &trans                    &kp LC(UP)    &trans  &trans    &trans    &trans
-&trans  &trans     &trans            &trans     &trans            &trans  &kp LC(DOWN)  &trans  &trans    &trans    &trans
-&trans  &kp LG(X)  &kp LG(C)         &kp LG(V)  &trans  &trans    &trans  &trans        &trans  &mkp MB1  &mkp MB2  &mkp MB3
-&trans  &trans     &kp LEFT_COMMAND  &trans     &trans  &trans    &trans  &trans                                    &trans
+&trans  &trans     &trans            &trans     &trans                    &trans  &trans  &trans    &trans    &trans
+&trans  &trans     &trans            &trans     &trans            &trans  &trans  &trans  &trans    &trans    &trans
+&trans  &kp LG(X)  &kp LG(C)         &kp LG(V)  &trans  &trans    &trans  &trans  &trans  &mkp MB1  &mkp MB2  &mkp MB3
+&trans  &trans     &kp LEFT_COMMAND  &trans     &trans  &trans    &trans  &trans                              &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -256,17 +256,6 @@
             >;
 
             sensor-bindings = <&scroll_up_down>;
-        };
-
-        mission_control {
-            bindings = <
-&kp LC(N1)  &kp LC(N2)  &kp LC(N3)  &kp LC(N4)  &kp LC(N5)                  &none  &none         &none  &none          &none
-&kp LC(N6)  &kp LC(N7)  &kp LC(N8)  &kp LC(N9)  &kp LC(N0)           &none  &none  &kp LC(LEFT)  &none  &kp LC(RIGHT)  &none
-&none       &none       &none       &none       &none       &none    &none  &none  &none         &none  &none          &none
-&none       &none       &none       &none       &none       &none    &none  &none                                      &none
-            >;
-
-            sensor-bindings = <&inc_dec_kp LC(LEFT) LC(RIGHT)>;
         };
 
         connect {
