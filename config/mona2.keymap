@@ -177,12 +177,20 @@
             flavor = "balanced";
         };
 
-        home_end: home_end {
+        scroll_home_end: scroll_home_end {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             tap-ms = <20>;
-            label = "HOME_END";
+            label = "SCROLL_HOME_END";
             bindings = <&kp END>, <&kp HOME>;
+        };
+
+        scroll_pgup_pgdn: scroll_pgup_pgdn {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            tap-ms = <20>;
+            label = "SCROLL_PGUP_PGDN";
+            bindings = <&kp PAGE_DOWN>, <&kp PAGE_UP>;
         };
     };
 
@@ -213,10 +221,10 @@
 
         number {
             bindings = <
-&trans  &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9                        &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6                &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp KP_N0        &trans           &trans           &trans        &trans  &trans                          &trans
+&trans  &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9                                 &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SLASH  &kp KP_ASTERISK
+&trans  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6                &kp KP_DOT       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS  &kp KP_PLUS
+&trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_EQUAL  &kp KP_COMMA
+&trans  &trans  &kp KP_N0        &trans           &trans           &trans        &trans           &trans                                                           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
@@ -241,7 +249,7 @@
 &none      &none      &none           &mbt1_command   &kp LG(SPACE)  &kp LG(TAB)    &kp LG(BACKSPACE)  &kp LG(ENTER)                       &none
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&scroll_pgup_pgdn>;
         };
 
         mouse {
