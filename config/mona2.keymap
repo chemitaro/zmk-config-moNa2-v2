@@ -206,21 +206,21 @@
 
         default_layer {
             bindings = <
-&kp Q          &kp W           &kp E          &kp R     &kp T                                                     &kp Y                      &kp U  &kp I      &kp O    &kp P
-&kp A          &kp S           &kp D          &kp F     &kp G                                   &mt GLOBE LC(UP)  &kp H                      &kp J  &kp K      &kp L    &kp MINUS
-&kp Z          &kp X           &kp C          &kp V     &kp B        &mt LEFT_ALT LANGUAGE_2    &lt 2 LANGUAGE_1  &kp N                      &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&mt LCTRL ESC  &kp LEFT_SHIFT  &mo_mkp 5 MB2  &mkp MB1  &lt 2 SPACE  &kp_num_sym 0 TAB          &kp BACKSPACE     &kp_cursor_scroll 0 ENTER                             &lt 6 COLON
+&kp Q          &kp L           &kp U          &kp COMMA  &kp PERIOD                                                &kp F                      &kp W  &kp R  &kp Y  &kp P
+&kp E          &kp I           &kp A          &kp O      &kp MINUS                               &mt GLOBE LC(UP)  &kp K                      &kp T  &kp N  &kp S  &kp H
+&kp Z          &kp X           &kp C          &kp V      &kp SLASH    &mt LEFT_ALT LANGUAGE_2    &lt 2 LANGUAGE_1  &kp G                      &kp D  &kp M  &kp J  &kp B
+&mt LCTRL ESC  &kp LEFT_SHIFT  &mo_mkp 5 MB2  &mkp MB1   &lt 2 SPACE  &kp_num_sym 0 TAB          &kp BACKSPACE     &kp_cursor_scroll 0 ENTER                       &lt 6 COLON
             >;
 
             sensor-bindings = <&scroll_up_down>;
         };
 
-        oonishi {
+        qwerty {
             bindings = <
-&kp Q   &kp L   &kp U   &kp COMMA  &kp DOT                      &kp F   &kp W  &kp R  &kp Y  &kp P
-&kp E   &kp I   &kp A   &kp O      &kp MINUS            &trans  &kp K   &kp T  &kp N  &kp S  &kp H
-&kp Z   &kp X   &kp C   &kp V      &kp FSLH   &trans    &trans  &kp G   &kp D  &kp M  &kp J  &kp B
-&trans  &trans  &trans  &trans     &trans     &trans    &trans  &trans                       &trans
+&kp Q   &kp W   &kp E   &kp R   &kp T                     &kp Y   &kp U  &kp I      &kp O    &kp P
+&kp A   &kp S   &kp D   &kp F   &kp G             &trans  &kp H   &kp J  &kp K      &kp L    &kp MINUS
+&kp Z   &kp X   &kp C   &kp V   &kp B   &trans    &trans  &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                             &trans
             >;
         };
 
