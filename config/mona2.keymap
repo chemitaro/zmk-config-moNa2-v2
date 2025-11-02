@@ -36,13 +36,13 @@
         mouse_btn3_2 {
             bindings = <&mkp MB3>;
             key-positions = <35 36>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         connect_mode {
             bindings = <&mo 8>;
             key-positions = <15 27>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         zoom_std {
@@ -53,13 +53,13 @@
         shift {
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <37 38>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         mo_symbol {
             bindings = <&mo 2>;
             key-positions = <39 40>;
-            layers = <0>;
+            layers = <0 2>;
         };
     };
 
