@@ -226,10 +226,10 @@
 
         symbol {
             bindings = <
-&kp PLUS      &kp MINUS  &kp GRAVE          &kp DOUBLE_QUOTES      &kp SINGLE_QUOTE                                  &kp EXCLAMATION  &kp CARET      &kp TILDE   &kp PIPE       &kp BACKSLASH
-&kp ASTERISK  &kp SLASH  &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp LEFT_BRACE                  &kp LESS_THAN     &kp POUND        &kp AT         &kp COLON   &kp SEMICOLON  &kp UNDERSCORE
-&kp SPACE     &kp EQUAL  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &kp KP_DOT    &kp GREATER_THAN  &kp PERCENT      &kp AMPERSAND  &kp DOLLAR  &kp LA(Y)      &kp QUESTION
-&trans        &trans     &trans             &trans                 &trans            &trans        &trans            &trans                                                     &trans
+&kp EXCLAMATION  &kp CARET      &kp TILDE  &kp LESS_THAN  &kp GREATER_THAN                           &kp SINGLE_QUOTE   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp ASTERISK  &kp SLASH
+&kp PERCENT      &kp AMPERSAND  &kp HASH   &kp AT_SIGN    &kp UNDERSCORE              &kp BACKSLASH  &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS      &kp MINUS
+&kp LA(Y)        &kp DOLLAR     &kp COLON  &kp SEMICOLON  &kp QUESTION      &trans    &kp PIPE       &kp GRAVE          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL     &kp SPACE
+&trans           &trans         &trans     &trans         &trans            &trans    &trans         &trans                                                                        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
@@ -248,9 +248,9 @@
 
         number {
             bindings = <
-&trans  &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9                                 &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_EQUAL     &kp KP_PLUS
-&trans  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6                &comma           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ASTERISK  &kp KP_MINUS
-&trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &kp KP_SLASH
+&trans  &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9                                 &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_ASTERISK  &kp KP_SLASH
+&trans  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6                &kp KP_DOT       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &kp KP_MINUS
+&trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_EQUAL     &comma
 &trans  &trans  &kp KP_N0        &trans           &trans           &trans        &trans           &trans                                                              &kp SPACE
             >;
 
