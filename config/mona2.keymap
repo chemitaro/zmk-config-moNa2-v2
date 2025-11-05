@@ -281,7 +281,7 @@
             bindings = <
 &none      &none      &kp LG(LS(N3))  &kp LG(LS(N4))  &kp LG(PLUS)                                     &none          &none  &none  &none  &none
 &kp LG(A)  &kp LG(S)  &none           &kp LG(F)       &kp LG(MINUS)                 &kp LG(LC(V))      &none          &none  &none  &none  &none
-&kp LG(Z)  &kp LG(X)  &kp LG(C)       &kp LG(V)       &kp LG(B)      &mo 11         &none              &none          &none  &none  &none  &none
+&kp LG(Z)  &kp LG(X)  &kp LG(C)       &kp LG(V)       &kp LG(B)      &mo 10         &none              &none          &none  &none  &none  &none
 &none      &none      &none           &mbt1_command   &kp LG(SPACE)  &kp LG(TAB)    &kp LG(BACKSPACE)  &kp LG(ENTER)                       &none
             >;
 
@@ -312,10 +312,10 @@
 
         control {
             bindings = <
-&trans  &trans  &trans     &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LC(D)  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LC(C)  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans  &trans  &trans    &trans  &trans                          &trans
+&kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(A)                    &kp LC(Y)  &kp LC(U)  &kp LC(I)      &kp LC(O)    &kp LC(P)
+&kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)            &trans  &kp LC(H)  &kp LC(J)  &kp LC(K)      &kp LC(L)    &kp LC(MINUS)
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &trans    &trans  &kp LC(N)  &kp LC(M)  &kp LC(COMMA)  &kp LC(DOT)  &kp LC(FSLH)
+&trans     &trans     &trans     &trans     &trans     &trans    &trans  &trans                                            &trans
             >;
         };
 
@@ -339,17 +339,6 @@
             >;
 
             sensor-bindings = <&inc_dec_kp HOME END>;
-        };
-
-        scroll_cursor_lr {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
-            >;
-
-            sensor-bindings = <&scroll_up_down>;
         };
     };
 
