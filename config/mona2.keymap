@@ -312,10 +312,10 @@
 
         control {
             bindings = <
-&kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(A)                    &kp LC(Y)  &kp LC(U)  &kp LC(I)      &kp LC(O)    &kp LC(P)
-&kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)            &trans  &kp LC(H)  &kp LC(J)  &kp LC(K)      &kp LC(L)    &kp LC(MINUS)
-&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &trans    &trans  &kp LC(N)  &kp LC(M)  &kp LC(COMMA)  &kp LC(DOT)  &kp LC(FSLH)
-&trans     &trans     &trans     &trans     &trans     &trans    &trans  &trans                                            &trans
+&kp LC(Q)  &kp LC(W)      &kp LC(E)     &kp LC(R)  &kp LC(A)                                   &kp LC(Y)      &kp LC(U)  &kp LC(I)      &kp LC(O)    &kp LC(P)
+&kp LC(A)  &kp LC(S)      &kp LC(D)     &kp LC(F)  &kp LC(G)                     &trans        &kp LC(H)      &kp LC(J)  &kp LC(K)      &kp LC(L)    &kp LC(MINUS)
+&kp LC(Z)  &kp LC(X)      &kp LC(C)     &kp LC(V)  &kp LC(B)      &trans         &trans        &kp LC(N)      &kp LC(M)  &kp LC(COMMA)  &kp LC(DOT)  &kp LC(FSLH)
+&trans     &kp LC(LSHFT)  &kp LC(LGUI)  &trans     &kp LC(SPACE)  &kp LC(TAB)    &kp LC(BSPC)  &kp LC(ENTER)                                         &trans
             >;
         };
 
