@@ -291,8 +291,8 @@
         mouse {
             bindings = <
 &trans  &trans     &trans            &trans     &trans                    &trans  &trans    &trans    &trans    &trans
-&trans  &trans     &trans            &trans     &trans            &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &kp LG(X)  &kp LG(C)         &kp LG(V)  &trans  &trans    &trans  &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans
+&trans  &trans     &trans            &trans     &trans            &trans  &trans  &trans    &trans    &trans    &mo 3
+&trans  &kp LG(X)  &kp LG(C)         &kp LG(V)  &trans  &trans    &trans  &trans  &mkp MB1  &mkp MB2  &mkp MB3  &mo 3
 &trans  &trans     &kp LEFT_COMMAND  &trans     &trans  &trans    &trans  &trans                                &trans
             >;
 
