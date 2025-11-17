@@ -76,10 +76,10 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mo 2 &mo 4>,
+                <&mo 4 &mo 2>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 4 &mo 2>;
+                <&mo 2 &mo 4>;
 
             label = "NUMBER_WITH_SYMBOLS";
         };
@@ -290,10 +290,10 @@
 
         mouse {
             bindings = <
-&trans  &trans     &trans            &trans     &trans                    &trans  &trans    &trans    &trans    &trans
-&trans  &trans     &trans            &trans     &trans            &trans  &trans  &trans    &trans    &trans    &mo 3
-&trans  &kp LG(X)  &kp LG(C)         &kp LG(V)  &trans  &trans    &trans  &trans  &mkp MB1  &mkp MB2  &mkp MB3  &mo 3
-&trans  &trans     &kp LEFT_COMMAND  &trans     &trans  &trans    &trans  &trans                                &trans
+&trans            &trans          &trans            &trans     &trans                    &trans  &trans    &trans    &trans    &trans
+&trans            &trans          &trans            &trans     &trans            &trans  &trans  &trans    &trans    &trans    &mo 3
+&trans            &kp LG(X)       &kp LG(C)         &kp LG(V)  &trans  &trans    &trans  &trans  &mkp MB1  &mkp MB2  &mkp MB3  &mo 3
+&kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_COMMAND  &trans     &trans  &trans    &trans  &trans                                &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -301,10 +301,10 @@
 
         cursor {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &kp LG(UP)    &kp LG(LEFT)    &kp UP_ARROW    &kp LG(RIGHT)    &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &kp LG(DOWN)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans          &trans          &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                                         &trans
+&trans     &trans          &trans            &trans  &trans                    &kp LG(UP)    &kp LG(LEFT)    &kp UP_ARROW    &kp LG(RIGHT)    &trans
+&trans     &trans          &trans            &trans  &trans            &trans  &kp LG(DOWN)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans     &trans          &trans            &trans  &trans  &trans    &trans  &trans        &trans          &trans          &trans           &trans
+&kp LCTRL  &kp LEFT_SHIFT  &kp LEFT_COMMAND  &trans  &trans  &trans    &trans  &trans                                                         &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
