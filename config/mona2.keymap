@@ -12,15 +12,16 @@
 #define SCROLL 6
 
 &mt {
-    flavor = "balanced";
-    quick-tap-ms = <0>;
+    flavor = "hold-preferred";
+    quick-tap-ms = <300>;
     tapping-term-ms = <170>;
 };
 
 &lt {
     quick-tap-ms = <300>;
-    flavor = "balanced";
+    flavor = "hold-preferred";
     tapping-term-ms = <170>;
+    retro-tap;
 };
 
 / {
@@ -162,6 +163,7 @@
 
             tapping-term-ms = <170>;
             flavor = "balanced";
+            retro-tap;
         };
 
         kp_num_sym: kp_num_sym {
@@ -171,7 +173,9 @@
             bindings = <&number_with_symbols>, <&kp>;
 
             tapping-term-ms = <170>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
+            quick-tap-ms = <300>;
+            retro-tap;
         };
 
         kp_cursor_scroll: kp_cursor_scroll {
@@ -181,7 +185,8 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <170>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
+            quick-tap-ms = <300>;
         };
 
         scroll_home_end: scroll_home_end {
