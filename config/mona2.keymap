@@ -15,6 +15,7 @@
     flavor = "hold-preferred";
     quick-tap-ms = <300>;
     tapping-term-ms = <170>;
+    retro-tap;
 };
 
 &lt {
@@ -163,7 +164,6 @@
 
             tapping-term-ms = <170>;
             flavor = "balanced";
-            retro-tap;
         };
 
         kp_num_sym: kp_num_sym {
@@ -231,10 +231,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp L           &kp E          &kp COMMA  &kp PERIOD                                                                &kp F                      &kp W  &kp R  &kp Y  &kp P
-&kp A      &kp I           &kp U          &kp O      &kp MINUS                                        &mt GLOBE LC(UP)         &kp K                      &kp T  &kp N  &kp S  &kp H
-&kp X      &kp J           &kp C          &kp V      &kp SLASH             &mt LEFT_ALT LANGUAGE_2    &lt 2 LANGUAGE_1         &kp G                      &kp D  &kp M  &kp Z  &kp B
-&lt 8 ESC  &kp LEFT_SHIFT  &mo_mkp 5 MB2  &mkp MB1   &mt LEFT_SHIFT SPACE  &lt 2 TAB                  &kp_num_sym 0 BACKSPACE  &kp_cursor_scroll 0 ENTER                       &mo_tog 6 1
+&kp Q      &kp L         &kp E          &kp COMMA  &kp PERIOD                                                                 &kp F                      &kp W  &kp R  &kp Y  &kp P
+&kp A      &kp I         &kp U          &kp O      &kp MINUS                                         &mt GLOBE LC(UP)         &kp K                      &kp T  &kp N  &kp S  &kp H
+&kp X      &kp J         &kp C          &kp V      &kp SLASH             &kp_num_sym 0 LANGUAGE_2    &lt 2 LANGUAGE_1         &kp G                      &kp D  &kp M  &kp Z  &kp B
+&lt 8 ESC  &kp LEFT_ALT  &mo_mkp 5 MB2  &mkp MB1   &mt LEFT_SHIFT SPACE  &lt 2 TAB                   &kp_num_sym 0 BACKSPACE  &kp_cursor_scroll 0 ENTER                       &mo_tog 6 1
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -295,10 +295,10 @@
 
         mouse {
             bindings = <
-&trans            &trans          &trans            &trans     &trans                    &trans  &trans    &trans    &trans    &trans
-&trans            &trans          &trans            &trans     &trans            &trans  &trans  &trans    &trans    &trans    &mo 3
-&trans            &kp LG(X)       &kp LG(C)         &kp LG(V)  &trans  &trans    &trans  &trans  &mkp MB1  &mkp MB2  &mkp MB3  &mo 3
-&kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_COMMAND  &trans     &trans  &trans    &trans  &trans                                &trans
+&trans            &trans     &trans            &trans     &trans                    &trans  &trans    &trans    &trans    &trans
+&trans            &trans     &trans            &trans     &trans            &trans  &trans  &trans    &trans    &trans    &mo 3
+&trans            &kp LG(X)  &kp LG(C)         &kp LG(V)  &trans  &trans    &trans  &trans  &mkp MB1  &mkp MB2  &mkp MB3  &mo 3
+&kp LEFT_CONTROL  &trans     &kp LEFT_COMMAND  &trans     &trans  &trans    &trans  &trans                                &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -306,10 +306,10 @@
 
         cursor {
             bindings = <
-&trans     &trans          &trans            &trans  &trans                    &kp LG(UP)    &kp LG(LEFT)    &kp UP_ARROW    &kp LG(RIGHT)    &trans
-&trans     &trans          &trans            &trans  &trans            &trans  &kp LG(DOWN)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans     &trans          &trans            &trans  &trans  &trans    &trans  &trans        &trans          &trans          &trans           &trans
-&kp LCTRL  &kp LEFT_SHIFT  &kp LEFT_COMMAND  &trans  &trans  &trans    &trans  &trans                                                         &trans
+&trans     &trans  &trans            &trans  &trans                    &kp LG(UP)    &kp LG(LEFT)    &kp UP_ARROW    &kp LG(RIGHT)    &trans
+&trans     &trans  &trans            &trans  &trans            &trans  &kp LG(DOWN)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans     &trans  &trans            &trans  &trans  &trans    &trans  &trans        &trans          &trans          &trans           &trans
+&kp LCTRL  &trans  &kp LEFT_COMMAND  &trans  &trans  &trans    &trans  &trans                                                         &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -317,10 +317,10 @@
 
         control {
             bindings = <
-&kp LC(Q)  &kp LC(W)      &kp LC(E)     &kp LC(R)  &kp LC(A)                                   &kp LC(Y)      &kp LC(U)  &kp LC(I)      &kp LC(O)    &kp LC(P)
-&kp LC(A)  &kp LC(S)      &kp LC(D)     &kp LC(F)  &kp LC(G)                     &trans        &kp LC(H)      &kp LC(J)  &kp LC(K)      &kp LC(L)    &kp LC(MINUS)
-&kp LC(Z)  &kp LC(X)      &kp LC(C)     &kp LC(V)  &kp LC(B)      &trans         &trans        &kp LC(N)      &kp LC(M)  &kp LC(COMMA)  &kp LC(DOT)  &kp LC(FSLH)
-&trans     &kp LC(LSHFT)  &kp LC(LGUI)  &trans     &kp LC(SPACE)  &kp LC(TAB)    &kp LC(BSPC)  &kp LC(ENTER)                                         &trans
+&kp LC(Q)  &kp LC(W)         &kp LC(E)     &kp LC(R)  &kp LC(A)                                   &kp LC(Y)      &kp LC(U)  &kp LC(I)      &kp LC(O)    &kp LC(P)
+&kp LC(A)  &kp LC(S)         &kp LC(D)     &kp LC(F)  &kp LC(G)                     &trans        &kp LC(H)      &kp LC(J)  &kp LC(K)      &kp LC(L)    &kp LC(MINUS)
+&kp LC(Z)  &kp LC(X)         &kp LC(C)     &kp LC(V)  &kp LC(B)      &trans         &trans        &kp LC(N)      &kp LC(M)  &kp LC(COMMA)  &kp LC(DOT)  &kp LC(FSLH)
+&trans     &kp LC(LEFT_ALT)  &kp LC(LGUI)  &trans     &kp LC(SPACE)  &kp LC(TAB)    &kp LC(BSPC)  &kp LC(ENTER)                                         &trans
             >;
         };
 
