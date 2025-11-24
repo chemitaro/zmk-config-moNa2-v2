@@ -175,7 +175,6 @@
             tapping-term-ms = <170>;
             flavor = "hold-preferred";
             quick-tap-ms = <300>;
-            retro-tap;
         };
 
         kp_cursor_scroll: kp_cursor_scroll {
