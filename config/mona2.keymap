@@ -79,7 +79,6 @@
             bindings =
                 <&macro_press>,
                 <&mo 4 &mo 2 &mo 3>,
-                <&macro_pause_for_release>,
                 <&macro_release>,
                 <&mo 3 &mo 2 &mo 4>;
 
@@ -92,7 +91,6 @@
             bindings =
                 <&macro_press>,
                 <&kp LEFT_COMMAND &mkp MB1>,
-                <&macro_pause_for_release>,
                 <&macro_release>,
                 <&mkp MB1 &kp LEFT_COMMAND>;
 
@@ -105,7 +103,6 @@
             bindings =
                 <&macro_press>,
                 <&mo 7 &mo 3>,
-                <&macro_pause_for_release>,
                 <&macro_release>,
                 <&mo 3 &mo 7>;
 
@@ -117,6 +114,20 @@
             #binding-cells = <0>;
             bindings = <&kp LANGUAGE_2 &kp COMMA>;
             label = "COMMA";
+        };
+
+        flow_hold: flow_hold {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE>,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_release>,
+                <&kp GLOBE>;
+
+            label = "FLOW_HOLD";
         };
     };
 
@@ -227,7 +238,7 @@
         flow: flow {
             compatible = "zmk,behavior-hold-tap";
             label = "FLOW";
-            bindings = <&kp>, <&kp>;
+            bindings = <&kp>, <&flow_hold>;
 
             #binding-cells = <2>;
             tapping-term-ms = <170>;
