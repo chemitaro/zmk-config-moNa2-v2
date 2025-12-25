@@ -308,19 +308,19 @@
             bindings = <
 &none      &none      &kp LG(LS(N3))  &kp LG(LS(N4))  &kp LG(PLUS)                                     &none          &none  &none  &none  &none
 &kp LG(A)  &kp LG(S)  &none           &kp LG(F)       &kp LG(MINUS)                 &kp LG(LC(V))      &none          &none  &none  &none  &none
-&kp LG(Z)  &kp LG(X)  &kp LG(C)       &kp LG(V)       &kp LG(B)      &mo 10         &none              &none          &none  &none  &none  &none
-&none      &none      &none           &mbt1_command   &kp LG(SPACE)  &kp LG(TAB)    &kp LG(BACKSPACE)  &kp LG(ENTER)                       &kp LC(DOWN)
+&kp LG(Z)  &kp LG(X)  &kp LG(C)       &kp LG(V)       &kp LG(B)      &none          &none              &none          &none  &none  &none  &none
+&none      &none      &none           &mkp MB3        &kp LG(SPACE)  &kp LG(TAB)    &kp LG(BACKSPACE)  &kp LG(ENTER)                       &kp LC(DOWN)
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp LG(PLUS) LG(MINUS)>;
         };
 
         mouse {
             bindings = <
-&trans            &trans     &trans            &trans     &trans                    &trans  &trans    &trans    &trans    &trans
-&trans            &trans     &trans            &trans     &trans            &trans  &trans  &trans    &trans    &trans    &mo 3
-&trans            &kp LG(X)  &kp LG(C)         &kp LG(V)  &trans  &trans    &trans  &trans  &mkp MB1  &mkp MB2  &mkp MB3  &mo 3
-&kp LEFT_CONTROL  &trans     &kp LEFT_COMMAND  &trans     &trans  &trans    &trans  &trans                                &trans
+&none             &none      &none             &none      &none                  &none  &none     &none     &none     &none
+&none             &none      &none             &none      &none           &none  &none  &none     &none     &none     &none
+&none             &kp LG(X)  &kp LG(C)         &kp LG(V)  &none  &none    &none  &none  &mkp MB1  &mkp MB2  &mkp MB3  &mo 3
+&kp LEFT_CONTROL  &none      &kp LEFT_COMMAND  &none      &none  &none    &none  &none                                &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -328,10 +328,10 @@
 
         cursor {
             bindings = <
-&trans     &trans  &trans            &trans  &trans                    &kp LG(UP)    &kp LG(LEFT)    &kp UP_ARROW    &kp LG(RIGHT)    &trans
-&trans     &trans  &trans            &trans  &trans            &trans  &kp LG(DOWN)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans     &trans  &trans            &trans  &trans  &trans    &trans  &trans        &trans          &trans          &trans           &trans
-&kp LCTRL  &trans  &kp LEFT_COMMAND  &trans  &trans  &trans    &trans  &trans                                                         &trans
+&trans     &trans  &trans            &trans  &trans                    &kp PAGE_UP    &trans          &kp UP_ARROW    &trans           &kp HOME
+&trans     &trans  &trans            &trans  &trans            &trans  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END
+&trans     &trans  &trans            &trans  &trans  &trans    &trans  &trans         &trans          &trans          &trans           &trans
+&kp LCTRL  &trans  &kp LEFT_COMMAND  &trans  &trans  &trans    &trans  &trans                                                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
