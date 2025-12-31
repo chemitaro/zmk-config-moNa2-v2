@@ -254,7 +254,7 @@
         default_layer {
             bindings = <
 &kp Q      &kp L         &kp E          &kp COMMA  &kp PERIOD                                                                 &kp F                      &kp W  &kp R  &kp Y  &kp P
-&kp A      &kp I         &kp U          &kp O      &kp MINUS                                         &flow RG(GLOBE) GLOBE    &kp K                      &kp T  &kp N  &kp S  &kp H
+&kp A      &kp I         &kp U          &kp O      &kp MINUS                                         &flow GLOBE RG(GLOBE)    &kp K                      &kp T  &kp N  &kp S  &kp H
 &kp X      &kp J         &kp C          &kp V      &kp SLASH             &kp_num_sym 0 LANGUAGE_2    &lt 2 LANGUAGE_1         &kp G                      &kp D  &kp M  &kp Z  &kp B
 &lt 8 ESC  &kp LEFT_ALT  &mo_mkp 5 MB2  &mkp MB1   &mt LEFT_SHIFT SPACE  &lt 2 TAB                   &kp_num_sym 0 BACKSPACE  &kp_cursor_scroll 0 ENTER                       &lt 6 LC(UP)
             >;
