@@ -42,7 +42,7 @@
         };
 
         connect_mode {
-            bindings = <&mo 9>;
+            bindings = <&mo 8>;
             key-positions = <15 27>;
             layers = <0 1>;
         };
@@ -295,10 +295,10 @@
 
         number {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_ASTERISK  &kp KP_SLASH
-&trans  &trans  &trans  &trans  &trans            &kp KP_DOT       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &kp KP_MINUS
-&trans  &trans  &trans  &trans  &trans  &trans    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_EQUAL     &comma
-&trans  &trans  &trans  &trans  &trans  &trans    &trans           &trans                                                              &trans
+&trans  &trans  &trans  &trans  &trans                    &comma           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &kp KP_DOT       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                                              &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
@@ -328,22 +328,13 @@
 
         cursor {
             bindings = <
-&trans     &trans  &trans            &trans  &trans                    &kp PAGE_UP    &trans          &kp UP_ARROW    &trans           &kp HOME
-&trans     &trans  &trans            &trans  &trans            &trans  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END
-&trans     &trans  &trans            &trans  &trans  &trans    &trans  &trans         &trans          &trans          &trans           &trans
-&kp LCTRL  &trans  &kp LEFT_COMMAND  &trans  &trans  &trans    &trans  &trans                                                          &trans
+&none      &none   &none             &none  &none                  &kp PAGE_UP    &none           &kp UP_ARROW    &none            &kp HOME
+&none      &none   &none             &none  &none           &none  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END
+&none      &none   &none             &none  &none  &none    &none  &none          &none           &none           &none            &none
+&kp LCTRL  &trans  &kp LEFT_COMMAND  &none  &none  &none    &none  &none                                                           &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
-        };
-
-        control {
-            bindings = <
-&kp LC(Q)  &kp LC(W)         &kp LC(E)     &kp LC(R)  &kp LC(T)                                   &kp LC(Y)      &kp LC(U)  &kp LC(I)      &kp LC(O)    &kp LC(P)
-&kp LC(A)  &kp LC(S)         &kp LC(D)     &kp LC(F)  &kp LC(G)                     &trans        &kp LC(H)      &kp LC(J)  &kp LC(K)      &kp LC(L)    &kp LC(MINUS)
-&kp LC(Z)  &kp LC(X)         &kp LC(C)     &kp LC(V)  &kp LC(B)      &trans         &trans        &kp LC(N)      &kp LC(M)  &kp LC(COMMA)  &kp LC(DOT)  &kp LC(FSLH)
-&trans     &kp LC(LEFT_ALT)  &kp LC(LGUI)  &trans     &kp LC(SPACE)  &kp LC(TAB)    &kp LC(BSPC)  &kp LC(ENTER)                                         &trans
-            >;
         };
 
         connect {
