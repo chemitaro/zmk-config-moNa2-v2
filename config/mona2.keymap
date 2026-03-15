@@ -312,7 +312,7 @@
 &none      &none      &none           &mbt1_command   &kp LG(SPACE)  &kp LG(TAB)    &kp LG(BACKSPACE)  &kp LG(ENTER)                       &kp LC(DOWN)
             >;
 
-            sensor-bindings = <&inc_dec_kp LG(PLUS) LG(MINUS)>;
+            sensor-bindings = <&scroll_right_left>;
         };
 
         mouse {
