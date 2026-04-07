@@ -9,25 +9,23 @@ manifest:
     # - name: sekigon-gonnoc  # <-- PAW3222
     #   url-base: https://github.com/sekigon-gonnoc
     - name: caksoylar  # <-- RGB LED
-      url-base: https://github.com/caksoylar  
+      url-base: https://github.com/caksoylar
     - name: zettaface  # <-- Input Processor Keybind
       url-base: https://github.com/zettaface
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v0.3.0
+      revision: v0.3-branch
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: badjeff
-      # Pinned to zmk-0.3 branch HEAD for ZMK v0.3.0 compatibility
-      revision: 77635bad95097e2ed6fc16624622cff025a0e33b
+      revision: zmk-0.3
     # - name: zmk-driver-paw3222
     #   remote: sekigon-gonnoc
     #   revision: main
     - name: zmk-rgbled-widget
       remote: caksoylar
-      # Pinned before Zephyr 4.1 / XIAO BLE overlay changes (2025-12-10) to avoid incompatibility
-      revision: fbe6dde8ffa68fdcded1600a66aa18cf12a796fb
+      revision: v0.3-branch
     - name: zmk-input-processor-keybind
       remote: zettaface
       # Pinned to main HEAD for reproducible builds
