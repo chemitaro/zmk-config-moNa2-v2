@@ -16,7 +16,7 @@ layers:
   - U
   - O
   - '-'
-  - {t: '&flow_hold RG(GLOBE)', h: GLOBE}
+  - Hyper+V
   - K
   - T
   - N
