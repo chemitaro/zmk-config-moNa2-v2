@@ -29,35 +29,6 @@
     combos {
         compatible = "zmk,combos";
 
-        mouse_btn3 {
-            bindings = <&mkp MB3>;
-            key-positions = <17 18>;
-            layers = <6>;
-        };
-
-        mouse_btn3_2 {
-            bindings = <&mkp MB3>;
-            key-positions = <35 36>;
-            layers = <0 1>;
-        };
-
-        connect_mode {
-            bindings = <&mo 8>;
-            key-positions = <15 27>;
-            layers = <0 1>;
-        };
-
-        zoom_std {
-            bindings = <&kp LG(NUMBER_0)>;
-            key-positions = <4 14 35>;
-        };
-
-        shift {
-            bindings = <&kp LEFT_SHIFT>;
-            key-positions = <37 38>;
-            layers = <0 1>;
-        };
-
         mo_symbol {
             bindings = <&mo 2>;
             key-positions = <39 40>;
@@ -255,7 +226,7 @@
             bindings = <
 &kp Q                 &kp L         &kp E          &kp COMMA  &kp PERIOD                                                                 &kp F                      &kp W  &kp R  &kp Y  &kp P
 &kp A                 &kp I         &kp U          &kp O      &kp MINUS                                         &kp LS(LA(LC(LG(V))))    &kp K                      &kp T  &kp N  &kp S  &kp H
-&kp X                 &kp J         &kp C          &kp V      &kp SLASH             &kp_num_sym 0 LANGUAGE_2    &lt 2 LANGUAGE_1         &kp G                      &kp D  &kp M  &kp Z  &kp B
+&kp X                 &kp J         &kp C          &kp V      &kp SLASH             &kp_num_sym 0 LANGUAGE_2    &lt 8 LANGUAGE_1         &kp G                      &kp D  &kp M  &kp Z  &kp B
 &mt LEFT_CONTROL ESC  &kp LEFT_ALT  &mo_mkp 5 MB2  &mkp MB1   &mt LEFT_SHIFT SPACE  &lt 2 TAB                   &kp_num_sym 0 BACKSPACE  &kp_cursor_scroll 0 ENTER                       &lt 6 LC(UP)
             >;
 
