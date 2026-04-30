@@ -28,7 +28,7 @@ layers:
   - V
   - /
   - {t: LANGUAGE 2, h: '&number_with_symbols'}
-  - {t: LANGUAGE 1, h: symbol}
+  - {t: LANGUAGE 1, h: connect}
   - G
   - D
   - M
@@ -114,7 +114,7 @@ layers:
   - '*'
   - /
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - '`'
   - '{'
   - '}'
@@ -125,7 +125,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -360,7 +360,7 @@ layers:
   - ''
   - ''
   - {t: qwerty, h: toggle}
-  - {type: held}
+  - ''
   - OUT BLE
   - OUT USB
   - ''
@@ -431,20 +431,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [17, 18]
-  k: '&mkp MB3'
-  l: [mouse]
-- p: [35, 36]
-  k: '&mkp MB3'
-  l: [default, qwerty]
-- p: [15, 27]
-  k: connect
-  l: [default, qwerty]
-- p: [4, 14, 35]
-  k: Gui+0
-- p: [37, 38]
-  k: LEFT SHIFT
-  l: [default, qwerty]
 - p: [39, 40]
   k: symbol
   l: [default, symbol]
