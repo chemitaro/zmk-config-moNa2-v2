@@ -350,11 +350,11 @@ layers:
   - ''
   - {t: qwerty, h: toggle}
   - {t: default, h: toggle}
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -364,8 +364,8 @@ layers:
   - OUT BLE
   - OUT USB
   - ''
-  - ''
-  - ''
+  - BT CLR
+  - BT CLR ALL
   - ''
   - ''
   - ''
@@ -373,20 +373,20 @@ layers:
   - ''
   - ''
   - {type: held}
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
   - ''
   - ''
   - ''
   - ''
-  - BT CLR
   - ''
   - ''
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - BT CLR ALL
   scroll_home_end:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
