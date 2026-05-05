@@ -16,7 +16,7 @@ layers:
   - U
   - O
   - '-'
-  - Hyper+V
+  - {t: Sft+Ctl+Gui+K, h: Sft+Ctl+Gui+V}
   - K
   - T
   - N
