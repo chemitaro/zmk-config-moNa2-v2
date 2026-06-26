@@ -225,6 +225,7 @@
             bindings = <&kp>, <&kp>;
 
             tapping-term-ms = <170>;
+            flavor = "tap-preferred";
         };
     };
 
